@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Ordering System</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar blue lighten-3">
+		<div class="container">
+			<div class="nav-wrapper white-text">
+				<div class="pull-left">
+					<a id="topbutton" href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light" style="text-decoration: none;height:60px"><i class="material-icons large ">menu</i></a>
+					  <ul id="slide-out" class="side-nav">
+						  <li class="side-pic"><img src="img/able_logo.png"></li>
+						  <li><a class="subheader">选择订餐类别：</a></li>
+						  <li id="personnel"><a href="#!"><i class="material-icons">perm_identity</i>员工预定</a></li>
+						  <li id="custom"><a href="#!"><i class="material-icons">recent_actors</i>客户预定</a></li>
+						  <li id="group"><a href="#!"><i class="material-icons">supervisor_account</i>团餐预定</a></li>
+					</ul>
+				</div>
+				<ul class="nav navbar-nav pull-right valign-wrapper nav-list">
+					<li  class="header"><span>A+TC订餐系统</span></li>
+					<li class="header-pic hidden-xs"><img src="img/able_logo.png"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- 内容 -->
+
+	<div class="content" id="content">
+		<div class="wrap">
+			<div><h3>A+TC员工在线订餐</h3></div>
+			<div class="input-field login">
+				<i class="material-icons prefix">perm_identity</i>
+				<input id="icon_prefix" type="text" class="validate">
+			    <label for="icon_prefix">工号或卡号</label>
+			</div>
+			<button class="btn waves-effect waves-light sub" type="submit" name="action">LOGIN
+			    <i class="material-icons right">send</i>
+			</button>
+		</div>
+	</div>
+
+	<!-- 页脚 -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="footer">Copyright © 2016.Advantech All rights reserved.</div>
+		</div>
+	</footer>
+	<div id="snowMask"></div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
